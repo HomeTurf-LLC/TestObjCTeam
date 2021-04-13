@@ -62,5 +62,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>HomeTurf would like to access your media library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>HomeTurf would like to access your camera</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>HomeTurf would like to access your location in order to ensure compliance with local regulations</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>HomeTurf needs to access your microphone for live channel calibration and team scream.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>HomeTurf would like to access your photo library</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>fetch</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

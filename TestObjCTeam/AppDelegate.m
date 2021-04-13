@@ -13,6 +13,12 @@
 
 @implementation AppDelegate
 
+UIInterfaceOrientationMask orientationLock = UIInterfaceOrientationMaskAll;
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsFor:(UIWindow *)window {
+    return orientationLock;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

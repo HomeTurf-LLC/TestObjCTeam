@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		1F4457A72625258300E097FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4457A62625258300E097FC /* Assets.xcassets */; };
 		1F4457AA2625258300E097FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4457A82625258300E097FC /* LaunchScreen.storyboard */; };
 		1F4457AD2625258300E097FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4457AC2625258300E097FC /* main.m */; };
+		1F4458062625ECD100E097FC /* HomeTurf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4458052625ECD100E097FC /* HomeTurf.plist */; };
+		1FC10FDC262650770067B396 /* TeamHomeTurfAuth0Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC10FDB262650770067B396 /* TeamHomeTurfAuth0Service.swift */; };
+		F3824003AFD9848219946512 /* Pods_TestObjCTeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46887B1F4778E3BE4EEE54A /* Pods_TestObjCTeam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,13 @@
 		1F4457A92625258300E097FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4457AB2625258300E097FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F4457AC2625258300E097FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F4457B8262530DF00E097FC /* HomeTurf.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HomeTurf.xcframework; path = Pods/HomeTurf/HomeTurf.xcframework; sourceTree = "<group>"; };
+		1F4458052625ECD100E097FC /* HomeTurf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomeTurf.plist; sourceTree = "<group>"; };
+		1FC10FDA262650770067B396 /* TestObjCTeam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestObjCTeam-Bridging-Header.h"; sourceTree = "<group>"; };
+		1FC10FDB262650770067B396 /* TeamHomeTurfAuth0Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHomeTurfAuth0Service.swift; sourceTree = "<group>"; };
+		22D266C916AD84ED0E216D6F /* Pods-TestObjCTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjCTeam.release.xcconfig"; path = "Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam.release.xcconfig"; sourceTree = "<group>"; };
+		C46887B1F4778E3BE4EEE54A /* Pods_TestObjCTeam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestObjCTeam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D357D1B3C08BCEB8FA6CF8F2 /* Pods-TestObjCTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjCTeam.debug.xcconfig"; path = "Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3824003AFD9848219946512 /* Pods_TestObjCTeam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +58,8 @@
 			children = (
 				1F4457992625257F00E097FC /* TestObjCTeam */,
 				1F4457982625257F00E097FC /* Products */,
+				EB6730B1196CD43F336D1A2E /* Pods */,
+				B6F751E565A378AAEFFC40E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +85,29 @@
 				1F4457A82625258300E097FC /* LaunchScreen.storyboard */,
 				1F4457AB2625258300E097FC /* Info.plist */,
 				1F4457AC2625258300E097FC /* main.m */,
+				1F4458052625ECD100E097FC /* HomeTurf.plist */,
+				1FC10FDB262650770067B396 /* TeamHomeTurfAuth0Service.swift */,
+				1FC10FDA262650770067B396 /* TestObjCTeam-Bridging-Header.h */,
 			);
 			path = TestObjCTeam;
+			sourceTree = "<group>";
+		};
+		B6F751E565A378AAEFFC40E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F4457B8262530DF00E097FC /* HomeTurf.xcframework */,
+				C46887B1F4778E3BE4EEE54A /* Pods_TestObjCTeam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB6730B1196CD43F336D1A2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D357D1B3C08BCEB8FA6CF8F2 /* Pods-TestObjCTeam.debug.xcconfig */,
+				22D266C916AD84ED0E216D6F /* Pods-TestObjCTeam.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F4457B02625258300E097FC /* Build configuration list for PBXNativeTarget "TestObjCTeam" */;
 			buildPhases = (
+				54B945B267FE59468221D0E6 /* [CP] Check Pods Manifest.lock */,
 				1F4457932625257F00E097FC /* Sources */,
 				1F4457942625257F00E097FC /* Frameworks */,
 				1F4457952625257F00E097FC /* Resources */,
+				DD82DA8C680C1370327586DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,6 +142,7 @@
 				TargetAttributes = {
 					1F4457962625257F00E097FC = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -134,11 +171,54 @@
 			files = (
 				1F4457AA2625258300E097FC /* LaunchScreen.storyboard in Resources */,
 				1F4457A72625258300E097FC /* Assets.xcassets in Resources */,
+				1F4458062625ECD100E097FC /* HomeTurf.plist in Resources */,
 				1F4457A52625257F00E097FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54B945B267FE59468221D0E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestObjCTeam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD82DA8C680C1370327586DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F4457932625257F00E097FC /* Sources */ = {
@@ -146,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4457A22625257F00E097FC /* ViewController.m in Sources */,
+				1FC10FDC262650770067B396 /* TeamHomeTurfAuth0Service.swift in Sources */,
 				1F44579C2625257F00E097FC /* AppDelegate.m in Sources */,
 				1F4457AD2625258300E097FC /* main.m in Sources */,
 				1F44579F2625257F00E097FC /* SceneDelegate.m in Sources */,
@@ -288,11 +369,17 @@
 		};
 		1F4457B12625258300E097FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D357D1B3C08BCEB8FA6CF8F2 /* Pods-TestObjCTeam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T7L7QL7A7;
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/Pods/**/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = TestObjCTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,17 +387,26 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hometurf.TestObjCTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjCTeam/TestObjCTeam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1F4457B22625258300E097FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D266C916AD84ED0E216D6F /* Pods-TestObjCTeam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T7L7QL7A7;
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/Pods/**/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = TestObjCTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -318,6 +414,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hometurf.TestObjCTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjCTeam/TestObjCTeam-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
