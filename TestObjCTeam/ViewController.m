@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import <HomeTurf/HomeTurf.h>
-#import <TestObjCTeam-Swift.h>
 
 @interface ViewController ()
 
@@ -22,9 +21,7 @@
 
 - (IBAction)enterHomeTurf {
     HomeTurfWebViewController *webVC = [[HomeTurfWebViewController alloc] init];
-    TeamHomeTurfAuth0Service *auth0Service = [[TeamHomeTurfAuth0Service alloc] init];
-    [webVC setAuth0ServiceWithAuth0Service:auth0Service];
-    [[self navigationController] pushViewController:webVC animated:NO];
+    [[self navigationController] pushViewController:webVC animated:YES];
 }
 
 @end

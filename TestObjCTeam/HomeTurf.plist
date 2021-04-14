@@ -6,13 +6,5 @@
     <string>https://dev.hometurfapp.com:4200/</string>
     <key>HomeTurfTeamId</key>
     <string>44169bb9-0f24-11e2-8525-18a905767e44</string>
-    <key>HomeTurfUseNativeAuth0</key>
-    <true/>
-    <key>HomeTurfAuth0Domain</key>
-    <string>dev-p428fe5m.us.auth0.com</string>
-    <key>HomeTurfAuth0ClientId</key>
-    <string>sm2iY4OwL0Pcp2wfzY6X2MIPnO18awFN</string>
-    <key>HomeTurfAuth0Audience</key>
-    <string>https://api.hometurfapp.com/v1/api/</string>
 </dict>
 </plist>

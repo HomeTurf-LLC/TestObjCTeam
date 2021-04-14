@@ -1,29 +1,16 @@
 PODS:
-  - Auth0 (1.31.0):
-    - JWTDecode
-    - SimpleKeychain
   - HomeTurf (1.0.6)
-  - JWTDecode (2.6.0)
-  - SimpleKeychain (0.12.2)
 
 DEPENDENCIES:
-  - Auth0 (~> 1.31)
   - HomeTurf (= 1.0.6)
 
 SPEC REPOS:
   "git@github.com:HomeTurf-LLC/HomeTurfPodspecs.git":
     - HomeTurf
-  trunk:
-    - Auth0
-    - JWTDecode
-    - SimpleKeychain
 
 SPEC CHECKSUMS:
-  Auth0: 5a4ddc55570c8dfb1521de559d7f5409fd7be632
   HomeTurf: 24c4f4b0a9d926cd1897bdfd727ff4f4c0faa5e6
-  JWTDecode: 480ca441ddbd5fbfb2abf17870af62f86436be58
-  SimpleKeychain: d6a74781e20ebac8cd89deebf593587913aeed07
 
-PODFILE CHECKSUM: 446b2b904c39beb49243c1c03559a487d41da1c7
+PODFILE CHECKSUM: 27fbc3e67216c0910f08a4df57a6f6e3c291b644
 
 COCOAPODS: 1.10.0
