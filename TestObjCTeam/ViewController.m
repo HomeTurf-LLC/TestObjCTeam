@@ -22,8 +22,8 @@
 
 - (IBAction)enterHomeTurf {
     HomeTurfWebViewController *webVC = [[HomeTurfWebViewController alloc] init];
-    TeamHomeTurfAuth0Service *customService = [[TeamHomeTurfAuth0Service alloc] init];
-    [webVC setAuth0Service:customService];
+    TeamHomeTurfAuth0Service *auth0Service = [[TeamHomeTurfAuth0Service alloc] init];
+    [webVC setAuth0ServiceWithAuth0Service:auth0Service];
     [[self navigationController] pushViewController:webVC animated:NO];
 }
 
