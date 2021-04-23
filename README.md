@@ -29,7 +29,7 @@ Add a new properties file to your project called `HomeTurf.plist`, with that nam
 <plist version="1.0">
 <dict>
     <key>HomeTurfDomain</key>
-    <string>https://www.hometurfapp.com</string>
+    <string>https://app.hometurfapp.com</string>
     <key>HomeTurfTeamId</key>
     <string>HOMETURF_TEAM_ID</string>
 </dict>
