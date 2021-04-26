@@ -59,6 +59,8 @@ Select your existing `Info.plist` in Xcode, Open as -> Source Code, and insert t
       <string>audio</string>
       <string>fetch</string>
     </array>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+	  <false/>
     <key>UIRequiresFullScreen</key>
     <true/>
 ```
