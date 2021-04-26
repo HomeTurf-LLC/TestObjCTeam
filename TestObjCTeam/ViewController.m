@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import <HomeTurf/HomeTurf.h>
+#import <TestObjCTeam-Swift.h>
 
 @interface ViewController ()
 
@@ -21,6 +22,8 @@
 
 - (IBAction)enterHomeTurf {
     HomeTurfWebViewController *webVC = [[HomeTurfWebViewController alloc] init];
+    TeamHomeTurfOrientationUtility *orientationUtility = [[TeamHomeTurfOrientationUtility alloc] init];
+    [webVC setOrientationUtilityWithOrientationUtility:orientationUtility];
     [[self navigationController] pushViewController:webVC animated:YES];
 }
 

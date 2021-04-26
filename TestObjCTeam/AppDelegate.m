@@ -7,24 +7,26 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
-@end
-
 @implementation AppDelegate
 
-UIInterfaceOrientationMask orientationLock = UIInterfaceOrientationMaskAll;
+@synthesize orientationLock = _orientationLock;
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsFor:(UIWindow *)window {
-    return orientationLock;
+- (void) setOrientationLock:(UIInterfaceOrientationMask)orientationLock {
+    _orientationLock = orientationLock;
 }
 
+- (UIInterfaceOrientationMask) orientationLock {
+    return _orientationLock || UIInterfaceOrientationMaskAll;
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return [self orientationLock];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
 }
-
 
 #pragma mark - UISceneSession lifecycle
 

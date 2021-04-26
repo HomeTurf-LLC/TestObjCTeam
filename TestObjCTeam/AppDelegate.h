@@ -9,6 +9,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (nonatomic) UIInterfaceOrientationMask orientationLock;
 
 @end
 

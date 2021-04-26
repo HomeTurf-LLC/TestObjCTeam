@@ -15,6 +15,7 @@
 		1F4457AA2625258300E097FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4457A82625258300E097FC /* LaunchScreen.storyboard */; };
 		1F4457AD2625258300E097FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4457AC2625258300E097FC /* main.m */; };
 		1F4458062625ECD100E097FC /* HomeTurf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4458052625ECD100E097FC /* HomeTurf.plist */; };
+		1F79B679263758900000A517 /* TeamHomeTurfOrientationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79B678263758900000A517 /* TeamHomeTurfOrientationUtility.swift */; };
 		F3824003AFD9848219946512 /* Pods_TestObjCTeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46887B1F4778E3BE4EEE54A /* Pods_TestObjCTeam.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		1F4457AC2625258300E097FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F4457B8262530DF00E097FC /* HomeTurf.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HomeTurf.xcframework; path = Pods/HomeTurf/HomeTurf.xcframework; sourceTree = "<group>"; };
 		1F4458052625ECD100E097FC /* HomeTurf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomeTurf.plist; sourceTree = "<group>"; };
+		1F79B678263758900000A517 /* TeamHomeTurfOrientationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHomeTurfOrientationUtility.swift; sourceTree = "<group>"; };
+		1F79B6A4263768660000A517 /* TestObjCTeam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestObjCTeam-Bridging-Header.h"; sourceTree = "<group>"; };
 		22D266C916AD84ED0E216D6F /* Pods-TestObjCTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjCTeam.release.xcconfig"; path = "Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam.release.xcconfig"; sourceTree = "<group>"; };
 		C46887B1F4778E3BE4EEE54A /* Pods_TestObjCTeam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestObjCTeam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D357D1B3C08BCEB8FA6CF8F2 /* Pods-TestObjCTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjCTeam.debug.xcconfig"; path = "Target Support Files/Pods-TestObjCTeam/Pods-TestObjCTeam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		1F4457992625257F00E097FC /* TestObjCTeam */ = {
 			isa = PBXGroup;
 			children = (
+				1F79B677263758770000A517 /* HomeTurfSupport */,
 				1F44579A2625257F00E097FC /* AppDelegate.h */,
 				1F44579B2625257F00E097FC /* AppDelegate.m */,
 				1F44579D2625257F00E097FC /* SceneDelegate.h */,
@@ -83,8 +87,17 @@
 				1F4457AB2625258300E097FC /* Info.plist */,
 				1F4457AC2625258300E097FC /* main.m */,
 				1F4458052625ECD100E097FC /* HomeTurf.plist */,
+				1F79B6A4263768660000A517 /* TestObjCTeam-Bridging-Header.h */,
 			);
 			path = TestObjCTeam;
+			sourceTree = "<group>";
+		};
+		1F79B677263758770000A517 /* HomeTurfSupport */ = {
+			isa = PBXGroup;
+			children = (
+				1F79B678263758900000A517 /* TeamHomeTurfOrientationUtility.swift */,
+			);
+			path = HomeTurfSupport;
 			sourceTree = "<group>";
 		};
 		B6F751E565A378AAEFFC40E8 /* Frameworks */ = {
@@ -222,6 +235,7 @@
 			files = (
 				1F4457A22625257F00E097FC /* ViewController.m in Sources */,
 				1F44579C2625257F00E097FC /* AppDelegate.m in Sources */,
+				1F79B679263758900000A517 /* TeamHomeTurfOrientationUtility.swift in Sources */,
 				1F4457AD2625258300E097FC /* main.m in Sources */,
 				1F44579F2625257F00E097FC /* SceneDelegate.m in Sources */,
 			);
@@ -365,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D357D1B3C08BCEB8FA6CF8F2 /* Pods-TestObjCTeam.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -392,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22D266C916AD84ED0E216D6F /* Pods-TestObjCTeam.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
