@@ -1,16 +1,16 @@
 PODS:
-  - HomeTurf (1.0.10)
+  - HomeTurf (1.0.13)
 
 DEPENDENCIES:
-  - HomeTurf (= 1.0.10)
+  - HomeTurf (= 1.0.13)
 
 SPEC REPOS:
   "git@github.com:HomeTurf-LLC/HomeTurfPodspecs.git":
     - HomeTurf
 
 SPEC CHECKSUMS:
-  HomeTurf: 4b2b341a2829fe4ff891e74a9b51629615ae3559
+  HomeTurf: 33a113cfde44b38b968949e67df2d5422853e213
 
-PODFILE CHECKSUM: 3aefff780869a49a92a2dceec60755e13a9f819c
+PODFILE CHECKSUM: 2a670518eacede97a3bc547c2e7688493cd932f0
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
